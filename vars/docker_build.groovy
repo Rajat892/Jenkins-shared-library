@@ -1,5 +1,5 @@
-def call(String image, String tag)
+def call(String user, String image, String tag)
 {
   echo "Building the code"
-  sh "docker build -t ${image}:${tag} ."
+  sh "docker build -t ${user}/${image}:${tag} ."
 }
